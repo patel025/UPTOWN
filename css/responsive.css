@@ -1,0 +1,54 @@
+ @media all and (max-width: 992px) {
+    
+   .Header .Navigation ul{ position: fixed; top: 0; left: 0; width: 320px; padding: 30px; box-sizing: border-box; background-color: #000; height: 100vh; transition: 0.5s all ease-in-out; transform: translate(-100%, 0px); } 
+   .Header .Navigation ul li{margin: 0 0 25px 0;display: block;}
+   .Header .Navigation ul.Show{ transform: translate(-0%, 0px); }
+   .Header .Navigation ul li a{ font-size:25px; color:#fff }
+   .Header .Navigation ul li:last-child{ display:none; }
+
+   .MenuBox{ display:block; }
+   .CloseMenu{ display:block; }
+
+   .SliderArea .carousel-control-prev, .SliderArea .carousel-control-next{ width:50px; font-size:50px }
+
+   .SpecialArea{ padding:50px 0 20px }
+   .SpecialArea .col-sm-4 { -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
+   .SpecialArea .SpecialBody .SpecialBox { margin-bottom:30px }
+
+   .GalleryArea .col-sm-4 { -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
+
+   footer .FooterArea{ padding:50px 0 20px }
+   footer .FooterArea .col-sm-4 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
+   footer .FooterArea .col-sm-8 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
+   footer .FooterArea .FooterLeft { margin-bottom:30px }
+   footer .FooterArea .FooterRight h3{ margin:0 0 20px 0 }
+   footer .FooterArea .FooterRight .Foots { margin-bottom:30px }
+
+    .AboutArea .col-sm-5,
+    .AboutArea .col-sm-7{flex: 0 0 100%; max-width: 100%;}
+    .AboutArea .AboutLeft{ margin-bottom:30px }
+
+ 
+
+
+}
+
+@media all and (max-width: 600px) {
+
+   .SliderArea .SliderBox{ text-align:center; padding:0 50px }
+   .SliderArea .SliderBox h2{ font-size:23px }
+   .SliderArea .SliderBox h2:after{ right:0; margin:auto; }
+   .SliderArea .SliderBox h1 { font-size: 3rem; margin-bottom:30px }
+   .SliderArea .SliderBox p{ font-size:15px; line-height:25px }
+
+   .SpecialArea .col-sm-4 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
+   .GalleryArea .col-sm-4 { -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
+
+    .AboutArea .AboutRight h2{ font-size:30px }
+    .AboutArea .AboutRight article{ flex-wrap:wrap; margin:0 }
+    .AboutArea .AboutRight article aside{ margin-top:50px }
+
+   footer .Copyright .container{ display:block; text-align:center; } 
+   footer .Copyright ul{ text-align:center; margin-top:20px }
+
+}
