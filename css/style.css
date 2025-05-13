@@ -19,6 +19,7 @@ body {
     font-size: 13px;
     color: #3a3a3a;
     background-color: #fff;
+    top: 0 !important;
 }
  
 ::-webkit-scrollbar {
@@ -138,18 +139,19 @@ select{cursor: pointer;outline: 0;}
 .Header .Link a{border:2px solid #197a0d;padding:10px 25px;color:#fff;font-size:14px;border-radius:50px;background-color:rgb(255 255 255 / 85%);color:#197a0d;font-weight:700;letter-spacing:.5px}
 .Header .Link a:hover{background-color:#197a0d;color:#fff}
 
+.Header .Navigation{ display: flex; align-items: center; }
 .Header .Navigation ul li{ display: inline-block; margin: 0 15px}
 .Header .Navigation ul li a{color: #000;text-transform: capitalize;font-weight: 400;font-size: 14px;letter-spacing: 0.5px;display: block;}
 .Header .Navigation ul li a:hover{ color: #126905;}
 .Header .Navigation ul li.OrderNow a{ background: #126905; padding: 12px 20px; border-radius: 5px; color: #fff;}
 .Header .Navigation ul li.OrderNow a:hover{ background-color: #fdb959; color: #000;}
 
-.Header .Navigation .nav-item.Languauge{position:relative}
-.Header .Navigation .nav-item.Languauge .nav-link{font-size: 18px;padding: 0;}
-.Header .Navigation .nav-item.Languauge .dropdown-menu{padding:0;right:0;left:auto;min-width:200px;border-radius:8px;overflow:hidden;box-shadow:0 0 7px #ddd}
-.Header .Navigation .nav-item.Languauge .dropdown-menu li{ margin: 0; display: block; }
-.Header .Navigation .nav-item.Languauge .dropdown-menu li a{display:block;font-size:14px;color:#000;padding:9px 15px;font-weight:500;text-transform: capitalize;}
-.Header .Navigation .nav-item.Languauge .dropdown-menu li a:hover{background: #126905;color:#fff}
+.Header .Navigation .Languauge{position:relative; margin: 0 0 0 10px; }
+.Header .Navigation .Languauge .nav-link{font-size: 18px;padding: 0; color: #000; }
+.Header .Navigation .Languauge .dropdown-menu{padding:0;right:0;left:auto;min-width:200px;border-radius:8px;overflow:hidden;box-shadow:0 0 7px #ddd}
+.Header .Navigation .Languauge .dropdown-menu li{ margin: 0; display: block; }
+.Header .Navigation .Languauge .dropdown-menu li a{display:block;font-size:14px;color:#000;padding:9px 15px;font-weight:500;text-transform: capitalize;}
+.Header .Navigation .Languauge .dropdown-menu li a:hover{background: #126905;color:#fff}
 
 .skiptranslate { display: none;}
 
