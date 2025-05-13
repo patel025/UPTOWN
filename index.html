@@ -32,12 +32,22 @@
                         <li><a class="anchor-scroll" href="#Services">Services</a></li> 
                         <li><a class="anchor-scroll" href="#Gallery">Gallery</a></li>
                         <li><a class="anchor-scroll" href="#Contact">Contact us</a></li>
-                        <li>
+                        <li class="OrderNow">
                             <a href="http://mypaycafe.food4me.net/" target="_blank">
                                 Order Now
                             </a>
                         </li>
+                        <li class="nav-item Languauge">
+                            <a class="dropdown-toggle nav-link" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+                                <i class="fa fa-globe" aria-hidden="true"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <li><a href="javascript:void(0);" onclick="doTranslate('en')">English</a></li>
+                                <li><a href="javascript:void(0);" onclick="doTranslate('da')">Danish</a></li>
+                            </ul>
+                        </li>
                     </ul>
+                    <div id="google_translate_element" style="display: none;"></div>
                 </div> 
             </div>
         </div>
@@ -626,6 +636,24 @@
                 $(".Navigation ul").toggleClass("Show");
             });
         });
+    </script>
+
+     <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: "en" }, "google_translate_element");
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <script>
+        function doTranslate(lang) {
+            const select = document.querySelector("select.goog-te-combo");
+            if (select) {
+                select.value = lang;
+                select.dispatchEvent(new Event("change"));
+            }
+        }
     </script>
 
 </body>
